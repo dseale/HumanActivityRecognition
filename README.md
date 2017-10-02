@@ -55,5 +55,5 @@ Merges downloaded training and test data sets as specified in the `constants` li
 
 Argument | Description
 ---------|----------------------------------------------------------------------
-`extractRegEx`| The regular expression to filter the raw data measurements.  Defaults to `mean\\(|std\\(`.
+`extractRegEx`| The regular expression to filter the raw data measurements. 
 
