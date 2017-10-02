@@ -17,14 +17,14 @@ The data used in this project was collected from the accelerometers of the Samsu
 
 The beginning of the script file contains a list of constants named `constants`.  If the source data used by this project changes or you wish to change the names or output format of the cleaned data file, you can change the elements in this list.
 
-####Sample Script Execution (defaults)
+#### Sample Script Execution (defaults)
 
 `source("run_analysis.R")`  
 `downloadData()`  
 `mergeAndCleanData()`
   
 ***
-####Function Reference (run_analysis.R)
+#### Function Reference (run_analysis.R)
 
 ***
 **downloadData**
@@ -32,7 +32,7 @@ The beginning of the script file contains a list of constants named `constants`.
 #####Description
 Used to download and unzip remote source data to a provided target directory and file.  Will verify existence of downloaded and unzipped data unless forced to requery and extract.
 
-#####Usage
+##### Usage
 
 `downloadData(targetDirectory="Data", targetFile="SourceData.zip", forceDownload=FALSE, reExtract=FALSE)`
 
@@ -46,10 +46,10 @@ Argument | Description
 ***
 **mergeAndCleanData**
 
-#####Description
+##### Description
 Merges downloaded training and test data sets as specified in the `constants` list. Filters by a supplied regular expression and creates a data set as specified in the `constants` list.  If a different regular expression is provided to extract measurements, the `rename()` function can be altered in order to adjust descriptive labels for the exported data set.
 
-#####Usage
+##### Usage
 
 `mergeAndCleanData(extractRegEx="mean\\(|std\\(")`
 
