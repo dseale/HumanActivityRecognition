@@ -29,7 +29,7 @@ The beginning of the script file contains a list of constants named `constants`.
 ***
 **downloadData**
 
-#####Description
+##### Description
 Used to download and unzip remote source data to a provided target directory and file.  Will verify existence of downloaded and unzipped data unless forced to requery and extract.
 
 ##### Usage
@@ -37,7 +37,7 @@ Used to download and unzip remote source data to a provided target directory and
 `downloadData(targetDirectory="Data", targetFile="SourceData.zip", forceDownload=FALSE, reExtract=FALSE)`
 
 Argument | Description
----------|----------------------------------------------------
+---------|---------------------------------------------------------
 `targetDirectory`| Specifies the directory to download the raw source.  Defaults to `Data`.
 `targetFile`| The name of the downloaded source zip file.  Defaults to `SourceData.zip`.
 `forceDownload`| When `TRUE`, will redownload the original source even if it exists.  Defaults to `FALSE`
@@ -53,7 +53,7 @@ Merges downloaded training and test data sets as specified in the `constants` li
 
 `mergeAndCleanData(extractRegEx="mean\\(|std\\(")`
 
-Argument | Descripti
----------|------------------------------------------------------
+Argument | Description
+---------|----------------------------------------------------------------------
 `extractRegEx`| The regular expression to filter the raw data measurements.  Defaults to `mean\\(|std\\(`.
 
